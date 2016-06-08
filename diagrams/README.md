@@ -59,7 +59,7 @@ Diagram showing scalloping loss between channels of a spectrometer
 
 ##### pfb_taps.pdf
 
-![pfb_taps}(pfb_taps.png)
+![pfb_taps](pfb_taps.png)
 
 ---
 
