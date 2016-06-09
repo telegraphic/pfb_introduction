@@ -1,6 +1,6 @@
 ### Polyphase filterbanks: an interactive introduction
 
-This repository provides some useful materials for understanding polyphase filterbanks (PFBs). Foremostly, this repo provides an [interactive notebook](pfb_intoduction.ipynb) that gives a gentle walkthrough of how polyphase filterbanks work. Also provided is [Python PFB code](pfb.py), some supplementary [diagrams](diagrams/) and a list of useful [references](references.md).
+This repository provides some useful materials for understanding polyphase filterbanks (PFBs). Foremostly, this repo provides an [interactive notebook](pfb_introduction.ipynb) that gives a gentle walkthrough of how polyphase filterbanks work. Also provided is [Python PFB code](pfb.py), some supplementary [diagrams](diagrams/) and a list of useful [references](references.md).
 
 #### Getting started
 
