@@ -22,7 +22,7 @@ The materials herein are licensed under Creative Commons [CC-BY 4.0](http://crea
 
 If you find this useful, please consider citing the accompanying Chapter of the Handbook of Astronomical Instrumentation. This is available on arxiv:
 
-**Spectrometers and Polyphase Filterbanks in Radio Astronomy**, Danny C. Price, 2016. 
+Danny C. Price, *Spectrometers and Polyphase Filterbanks in Radio Astronomy*,  2016. arXiv 1607.03579 
 
 URL: http://arxiv.org/abs/1607.03579
 
