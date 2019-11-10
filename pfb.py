@@ -22,8 +22,8 @@ def pfb_fir_frontend(x, win_coeffs, M, P):
     W = x.shape[0] / M / P
     x_p = x.reshape((W*M, P)).T
     h_p = win_coeffs.reshape((M, P)).T
-    x_summed = np.zeros((P, M * W - M))
-    for t in range(0, M*W-M):
+    x_summed = np.zeros((P, M * W - M + 1))
+    for t in range(0, M*W-M + 1):
         x_weighted = x_p[:, t:t+M] * h_p
         x_summed[:, t] = x_weighted.sum(axis=1)
     return x_summed.T
@@ -32,6 +32,7 @@ def fft(x_p, P, axis=1):
     return np.fft.rfft(x_p, P, axis=axis)
 
 def pfb_filterbank(x, win_coeffs, M, P):
+    x = x[:int(len(x)//(M*P))*M*P] # Ensure it's an integer multiple of win_coeffs
     x_fir = pfb_fir_frontend(x, win_coeffs, M, P)
     x_pfb = fft(x_fir, P)
 
@@ -41,10 +42,11 @@ def pfb_spectrometer(x, n_taps, n_chan, n_int, window_fn="hamming"):
     
     # Generate window coefficients
     win_coeffs = generate_win_coeffs(M, P, window_fn)
-
+    pg = np.sum(np.abs(win_coeffs)**2)
+    win_coeffs /= pg**.5 # Normalize for processing gain
+    
     # Apply frontend, take FFT, then take power (i.e. square)
-    x_fir = pfb_fir_frontend(x, win_coeffs, M, P)
-    x_pfb = fft(x_fir, P)
+    x_pfb = pfb_filterbank(x, win_coeffs, M, P)
     x_psd = np.abs(x_pfb)**2
     
     # Trim array so we can do time integration
