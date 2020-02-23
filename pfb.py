@@ -29,7 +29,7 @@ def pfb_fir_frontend(x, win_coeffs, M, P):
     return x_summed.T
 
 def fft(x_p, P, axis=1):
-    return np.fft.ifft(x_p, P, axis=axis)
+    return np.fft.fft(x_p, P, axis=axis)
 
 def pfb_filterbank(x, win_coeffs, M, P):
     x = x[:int(len(x)//(M*P))*M*P] # Ensure it's an integer multiple of win_coeffs
