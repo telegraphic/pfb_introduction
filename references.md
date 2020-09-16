@@ -19,6 +19,8 @@ by Steven W. Smith | [Freely available online](http://www.dspguide.com)
 
 * Multirate Signal Processing for Communication Systems 1st Edition by Fredric J. Harris. *The most obvious mutlirate text book, I would recommend loaning from the library, not buying it, unless you're super serious.*
 
+* J. Smith, "Overlapped Polyphase Filterbank", CASPER memo 54, 2019. [Available here](https://github.com/casper-astro/publications/blob/master/Memos/files/Smith_Polyphase_Explanation.pdf)
+
 ### PFB codes
 
 * J. Chennamangalam, S. Scott, G. Jones, H. Chen, J. Ford, A. Kepley, D. R. Lorimer, J. Nie, R. Prestage, D. A. Roshi, M. Wagner, and D. Werthimer, “A GPU-Based Wide-Band Radio Spectrometer,” Publications of the Astronomical Society of Australia, vol. 31, p. e048, Dec. 2014.  [Available here](https://ui.adsabs.harvard.edu#abs/2014PASA...31...48C/abstract) *GPU code*
@@ -26,6 +28,8 @@ by Steven W. Smith | [Freely available online](http://www.dspguide.com)
 * K. Adámek, J. Novotný, and W. Armour, “A polyphase filter for many-core architectures,” Astronomy and Computing, vol. 16, pp. 1–16, Jul. 2016. [Available here](https://ui.adsabs.harvard.edu#abs/2016A&C....16....1A/abstract) *GPU, CPU and Intel Phi*
 
 * A. Parsons, D. Werthimer, D. Backer, T. Bastian, G. Bower, W. Brisken, H. Chen, A. Deller, T. Filiba, D. Gary, L. Greenhill, D. Hawkins, G. Jones, G. Langston, J. Lazio, J. V. Leeuwen, D. Mitchell, J. Manley, A. Siemion, H. Kwok-Hay So, A. Whitney, D. Woody, M. Wright, and K. Zarb Adami, “Digital Instrumentation for the Radio Astronomy Community,” arXiv, vol. astro-ph.IM, 2009. [Available here](https://ui.adsabs.harvard.edu#abs/2009astro2010T..21P/abstract) *The canonical CASPER paper*
+
+* github.com/0xCoto [VIRGO: A Versatile Spectrometer for Radio Astronomy](https://github.com/0xCoto). *GNU Radio PFB code*
 
 ### Links
 
