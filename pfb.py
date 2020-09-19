@@ -71,7 +71,7 @@ if __name__ == "__main__":
 
     # Generate a test data steam
     samples = np.arange(M*P*W)
-    noise   = np.random.random(M*P*W) 
+    noise   = np.random.normal(loc=0.5, scale=0.1, size=M*P*W) 
     freq    = 1
     amp     = 1
     cw_signal = amp * np.sin(samples * freq)
